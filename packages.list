@@ -1,0 +1,12 @@
+build-essential
+wget
+make
+git
+mercurial
+doxygen
+python3
+python3-numpy
+python3-scipy
+python3-matplotlib
+python3-pytest
+pip3

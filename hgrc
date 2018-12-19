@@ -1,0 +1,6 @@
+[ui]
+username = Cristian Lacey <clacey@princeton.edu>
+style = compact
+
+[alias]
+glog = log -G

@@ -11,3 +11,5 @@
 	pretty = oneline
 [alias]
 	lg = log -n 15 --oneline --decorate --graph --pretty=format:'%C(auto,yellow)%h%C(auto)%d %C(auto,cyan bold)%aN %C(red dim)%cd %C(reset)%s' --date=format:'%a %X %m/%d/%y'
+	st = status
+	ci = commit -m

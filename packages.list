@@ -2,7 +2,7 @@
 gnome-tweak-tool
 gnome-shell-extensions
 gnome-sushi
-ubuntu-gnome-desktop
+#ubuntu-gnome-desktop
 dconf-tools
 chrome-gnome-shell
 

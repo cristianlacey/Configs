@@ -23,6 +23,7 @@ python3-numpy
 python3-scipy
 python3-matplotlib
 python3-pytest
+python3-sphinx
 python3-pip
 ipython3
 cython3

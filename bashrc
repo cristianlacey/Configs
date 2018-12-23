@@ -122,3 +122,6 @@ alias emacs="emacs -nw"
 # reopen suspended emacs window with ctrl-z
 stty susp undef
 bind '"\C-z":"fg\015"'
+
+# turn off error alarm noises in terminal
+bind 'set bell-style none'

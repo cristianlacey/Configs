@@ -31,9 +31,9 @@
     dash
     highlight-indentation
     ivy
-    jedi
+    ;;jedi
     ;;auto-complete
-    jedi-core
+    ;;jedi-core
     epc
     ctable
     concurrent
@@ -59,8 +59,11 @@
 ;; --------------------------------------
 
 (setq inhibit-startup-message t) ;; hide the startup message
+
+;; (CHOOSE THEME)
 ;;(load-theme 'material t) ;; load material theme
 (load-theme 'monokai t) ;; load monokai theme
+
 (global-linum-mode t) ;; enable line numbers globally
 (setq linum-format "%4d \u2502 ")
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
@@ -68,9 +71,9 @@
 ;; PYTHON CONFIGURATION
 ;; --------------------------------------
 ;; Standard Jedi.el setting
-(add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:complete-on-dot t)
-(autoload 'jedi:setup "jedi" nil t)
+;;(add-hook 'python-mode-hook 'jedi:setup)
+;;(setq jedi:complete-on-dot t)
+;;(autoload 'jedi:setup "jedi" nil t)
 
   ;;(add-hook 'python-mode-hook
 	;;    (lambda ()

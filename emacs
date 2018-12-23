@@ -39,7 +39,7 @@
     concurrent
     julia-mode
     julia-repl
-    material-theme
+    ;;material-theme
     pkg-info
     epl
     popup
@@ -62,7 +62,8 @@
 
 ;; (CHOOSE THEME)
 ;;(load-theme 'material t) ;; load material theme
-(load-theme 'monokai t) ;; load monokai theme
+;;(load-theme 'monokai t) ;; load monokai theme
+(load-theme 'atom-one-dark t) ;; load atom dark theme
 
 (global-linum-mode t) ;; enable line numbers globally
 (setq linum-format "%4d \u2502 ")

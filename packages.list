@@ -7,11 +7,13 @@ chrome-gnome-shell
 
 # Linux Essentials
 wget
+curl
 emacs
 make
 git
 mercurial
 doxygen
+gdebi-core
 
 # Standard C
 build-essential

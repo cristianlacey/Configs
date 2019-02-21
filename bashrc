@@ -125,3 +125,6 @@ bind '"\C-z":"fg\015"'
 
 # turn off error alarm noises in terminal
 bind 'set bell-style none'
+
+# ssh alias
+alias tiger="ssh clacey@tiger.princeton.edu"

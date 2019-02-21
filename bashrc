@@ -128,7 +128,3 @@ bind 'set bell-style none'
 
 # ssh alias
 alias tiger="ssh clacey@tiger.princeton.edu
-
-# load modules on tigercpu
-module load intel
-module load intel-mpi

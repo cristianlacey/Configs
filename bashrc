@@ -128,3 +128,6 @@ bind 'set bell-style none'
 
 # ssh alias
 alias tiger="ssh clacey@tiger.princeton.edu"
+
+# vpn alias
+alias vpn="startct -m console remote.princeton.edu"

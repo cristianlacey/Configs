@@ -130,6 +130,20 @@ alias tigressdata="ssh clacey@tigressdata.princeton.edu"
 # vpn alias
 alias vpn="startct -m console remote.princeton.edu"
 
+# preload paraview library dependency
+alias paraview="LD_PRELOAD=/usr/lib64/libstdc++.so.6 ~/ParaView/ParaView-5.6.0-MPI-Linux-64bit/bin/paraview"
+
+# --------------------------------------
+# SHELL FUNCTIONS
+# --------------------------------------
+
+# connect tigress to host machine for paraview
+host_paraview ()
+{
+	export DISPLAY=:0
+	~/ParaView/ParaView-5.6.0-MPI-Linux-64bit/bin/pvserver -rc --client-host=$1 -display :0 --use-offscreen-rendering
+}
+
 # --------------------------------------
 # BINDINGS
 # --------------------------------------
@@ -140,3 +154,4 @@ bind '"\C-z":"fg\015"'
 
 # turn off error alarm noises in terminal
 bind 'set bell-style none'
+

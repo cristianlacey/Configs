@@ -145,7 +145,7 @@ alias paraview="LD_PRELOAD=/usr/lib64/libstdc++.so.6 ~/ParaView/ParaView-5.6.0-M
 host_paraview ()
 {
 	export DISPLAY=:0
-	~/ParaView/ParaView-5.6.0-MPI-Linux-64bit/bin/pvserver -rc --client-host=$1 -display :0 --use-offscreen-rendering
+	~/ParaView/ParaView-5.6.0-MPI-Linux-64bit/bin/pvserver -rc --client-host=$1 -display :0 --force-offscreen-rendering
 }
 
 # --------------------------------------

@@ -130,6 +130,8 @@ alias emacs="emacs -nw"
 # ssh aliases
 alias tiger="ssh clacey@tiger.princeton.edu"
 alias tigressdata="ssh clacey@tigressdata.princeton.edu"
+alias tigressdata2="ssh -L 11111:localhost:11111 tigressdata2" # from Princeton machine
+alias mae-clacey="ssh mae-jmacart@princeton.edu"
 
 # vpn alias
 alias vpn="startct -m console remote.princeton.edu"
@@ -145,7 +147,7 @@ alias paraview="LD_PRELOAD=/usr/lib64/libstdc++.so.6 ~/ParaView/ParaView-5.6.0-M
 host_paraview ()
 {
 	export DISPLAY=:0
-	~/ParaView/ParaView-5.6.0-MPI-Linux-64bit/bin/pvserver -rc --client-host=$1 -display :0 --use-offscreen-rendering
+	~/ParaView/ParaView-5.6.0-MPI-Linux-64bit/bin/pvserver -display :0 --force-offscreen-rendering
 }
 
 # --------------------------------------
@@ -158,4 +160,3 @@ bind '"\C-z":"fg\015"'
 
 # turn off error alarm noises in terminal
 bind 'set bell-style none'
-

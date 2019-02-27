@@ -129,8 +129,8 @@ alias emacs="emacs -nw"
 
 # ssh aliases
 alias tiger="ssh clacey@tiger.princeton.edu"
-alias tigressdata="ssh clacey@tigressdata.princeton.edu"
-alias tigressdata2="ssh -L 11111:localhost:11111 tigressdata2" # from Princeton machine
+alias tdata="ssh -L 11111:localhost:11111 tigressdata2" # from Princeton machine
+alias tdata2="ssh clacey@tigressdata.princeton.edu"
 alias mae-clacey="ssh -X mae-jmacart.princeton.edu"
 
 # vpn alias

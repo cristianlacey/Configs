@@ -1,3 +1,7 @@
+# --------------------------------------
+# .BASHRC
+# --------------------------------------
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -72,38 +76,8 @@ xterm*|rxvt*)
     ;;
 esac
 
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
-
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -116,8 +90,69 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# --------------------------------------
+# ALIASES
+# --------------------------------------
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# some more ls aliases
+alias ll='ls -alhF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
 # open emacs in terminal by default
 alias emacs="emacs -nw"
+
+# ssh aliases
+alias tiger="ssh clacey@tiger.princeton.edu"
+alias tdata="ssh -L 11111:localhost:11111 tigressdata2" # from Princeton machine
+alias tdata2="ssh clacey@tigressdata.princeton.edu"
+alias mae-clacey="ssh -X mae-jmacart.princeton.edu"
+
+# vpn alias
+alias vpn="startct -m console remote.princeton.edu"
+
+# preload paraview library dependency
+alias paraview="LD_PRELOAD=/usr/lib64/libstdc++.so.6 ~/ParaView/ParaView-5.6.0-MPI-Linux-64bit/bin/paraview"
+
+# --------------------------------------
+# SHELL FUNCTIONS
+# --------------------------------------
+
+# connect tigress to host machine for paraview
+host_paraview ()
+{
+	export DISPLAY=:0
+	~/ParaView/ParaView-5.6.0-MPI-Linux-64bit/bin/pvserver -display :0 --force-offscreen-rendering
+}
+
+# --------------------------------------
+# BINDINGS
+# --------------------------------------
 
 # reopen suspended emacs window with ctrl-z
 stty susp undef
@@ -125,6 +160,3 @@ bind '"\C-z":"fg\015"'
 
 # turn off error alarm noises in terminal
 bind 'set bell-style none'
-
-# ssh alias
-alias tiger="ssh clacey@tiger.princeton.edu"

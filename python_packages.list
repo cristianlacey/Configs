@@ -1,0 +1,12 @@
+# Python Libraries
+numpy
+scipy
+matplotlib
+pytest
+sphinx
+
+# GASTOp Dependencies
+configobj
+tqdm
+colorama
+imageio

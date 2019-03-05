@@ -23,17 +23,6 @@ build-essential
 
 # Python
 python3
-python3-numpy
-python3-scipy
-python3-matplotlib
-python3-pytest
-python3-sphinx
 python3-pip
 ipython3
 cython3
-
-# GASTOp Dependencies
-python3-configobj
-python3-tqdm
-python3-colorama
-python3-imageio

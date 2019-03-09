@@ -127,6 +127,9 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # open emacs in terminal by default
 alias emacs="emacs -nw"
 
+# clipboard copy
+alias copy='xclip -sel clip'
+
 # ssh aliases
 alias tiger="ssh clacey@tiger.princeton.edu"
 alias tdata="ssh -L 11111:localhost:11111 tigressdata2" # from Princeton machine
@@ -160,3 +163,4 @@ bind '"\C-z":"fg\015"'
 
 # turn off error alarm noises in terminal
 bind 'set bell-style none'
+. /home/clacey/anaconda3/etc/profile.d/conda.sh

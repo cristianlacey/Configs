@@ -17,6 +17,7 @@ git
 mercurial
 doxygen
 gdebi-core
+xclip
 
 # Standard C
 build-essential

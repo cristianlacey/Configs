@@ -163,4 +163,4 @@ bind '"\C-z":"fg\015"'
 
 # turn off error alarm noises in terminal
 bind 'set bell-style none'
-. /home/clacey/anaconda3/etc/profile.d/conda.sh
+# . /home/clacey/anaconda3/etc/profile.d/conda.sh

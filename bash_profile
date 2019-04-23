@@ -33,5 +33,5 @@ alias squeue='squeue --start \
 
 # shell functions
 diskquota () {
-    /usr/lpp/mmfs/bin/mmlsquota /dev/tiger.gpfs | awk '/[0-9]/ {$4 = $4/1073741824; $5 = $5/1073741824; $6 = $6/1073741824; print "Used: ",$4," TB\t","Quota: ",$5," TB\t","Limit: ",$6," TB"}'
+    /usr/lpp/mmfs/bin/mmlsquota /dev/tigercpu.gpfs | awk '/[0-9]/ {$4 = $4/1073741824; $5 = $5/1073741824; $6 = $6/1073741824; print "Used: ",$4," TB\t","Quota: ",$5," TB\t","Limit: ",$6," TB"}'
 }

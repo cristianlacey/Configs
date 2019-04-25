@@ -153,6 +153,9 @@ host_paraview ()
 	~/ParaView/ParaView-5.6.0-MPI-Linux-64bit/bin/pvserver -display :0 --force-offscreen-rendering
 }
 
+# source cd -- function
+source ~/Configs/acd_func.sh
+
 # --------------------------------------
 # BINDINGS
 # --------------------------------------

@@ -13,14 +13,16 @@ ln ~/Configs/hgrc ~/.hgrc
 ln ~/Configs/emacs ~/.emacs
 ln ~/Configs/gitconfig ~/.gitconfig
 
-# Only link .bash_profile if passed "profile" arg.
+# Only link .bash_profile if passed "tiger" arg.
 
 case $1 in
-    profile)
+    tiger)
 	rm ~/.bash_profile
 	ln ~/Configs/bash_profile ~/.bash_profile
+	source ~/Configs/bash_profile
 	;;
     *)
-	echo 'Usage: $0 profile'
+	source ~/Configs/bashrc
+	printf 'To also link .bash_profile (on Tiger): %s tiger\n' $0
 	;;
 esac

@@ -170,7 +170,11 @@ bind '"\C-z":"fg\015"'
 # turn off error alarm noises in terminal
 bind 'set bell-style none'
 
-# . /home/clacey/anaconda3/etc/profile.d/conda.sh
+# --------------------------------------
+# ANACONDA
+# --------------------------------------
+
+. /home/clacey/anaconda3/etc/profile.d/conda.sh
 
 # # >>> conda initialize >>>
 # # !! Contents within this block are managed by 'conda init' !!

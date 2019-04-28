@@ -19,10 +19,11 @@ case $1 in
     tiger)
 	rm ~/.bash_profile
 	ln ~/Configs/bash_profile ~/.bash_profile
-	source ~/Configs/bash_profile
+	. ~/Configs/bashrc
+	. ~/Configs/bash_profile
 	;;
     *)
-	source ~/Configs/bashrc
+	. ~/Configs/bashrc
 	printf 'To also link .bash_profile (on Tiger): %s tiger\n' $0
 	;;
 esac

@@ -29,7 +29,7 @@ export PS1="$(tty -s && tput bold)$PS1$(tty -s && tput sgr0)"
 alias qstat='qstat -u $USER'
 alias sshare='sshare -u $USER'
 alias sq='squeue --start \
---format="%.10T %.8i %.9Q %.14q %.10P %.15j %.7u %.8a %.20S %.6D %.5C %.30R" --sort=S --states=all -u $USER'
+--format="%.10T %.8i %.9Q %.14q %.10P %.30j %.7u %.8a %.20S %.6D %.5C %.30R" --sort=S --states=all -u $USER'
 
 # shell functions
 diskquota () {

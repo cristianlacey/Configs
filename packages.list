@@ -4,7 +4,7 @@ gnome-shell-extensions
 gnome-sushi
 dconf-tools
 chrome-gnome-shell
-texlive-full
+#texlive-full
 texmaker
 flameshot
 gnuplot

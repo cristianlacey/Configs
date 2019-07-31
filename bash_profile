@@ -16,6 +16,8 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/clacey/opt/sundials/lib
 
 export PYTHONPATH=$PYTHONPATH:/home/clacey/PDRs/src/utilities
 
+export PATH=$PATH:/home/clacey/PDRs/bin
+
 # -------------------------------
 # Tiger specific actions/aliases
 # -------------------------------

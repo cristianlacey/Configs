@@ -14,6 +14,8 @@ export PATH
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/clacey/opt/sundials/lib
 
+export PYTHONPATH=$PYTHONPATH:/home/clacey/PDRs/src/utilities
+
 # -------------------------------
 # Tiger specific actions/aliases
 # -------------------------------
@@ -21,6 +23,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/clacey/opt/sundials/lib
 # load modules on tigercpu
 module load intel
 module load intel-mpi
+module load anaconda
 
 # bold username
 export PS1="$(tty -s && tput bold)$PS1$(tty -s && tput sgr0)"

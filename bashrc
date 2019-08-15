@@ -132,6 +132,7 @@ alias copy='xclip -sel clip'
 
 # ssh aliases
 alias tiger="ssh -X clacey@tiger.princeton.edu"
+alias rtiger="ssh -R 52698:localhost:52698 clacey@tiger.princeton.edu"
 alias tdata="ssh -L 11111:localhost:11111 tigressdata2" # from Princeton machine
 alias tdata2="ssh clacey@tigressdata.princeton.edu"
 alias mae-clacey="ssh -X mae-jmacart.princeton.edu"

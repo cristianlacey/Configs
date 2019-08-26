@@ -14,6 +14,7 @@ export PATH
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/clacey/opt/sundials/lib
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/clacey/opt/sundials-4/lib64
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/$USER/opt/SuiteSparse/lib
 
 export PYTHONPATH=$PYTHONPATH:/home/clacey/PDRs/src/utilities
 

@@ -32,6 +32,7 @@ export PATH=$PATH:/home/clacey/PDRs/bin
 module load intel
 module load intel-mpi
 module load anaconda
+module load git
 
 # bold username
 export PS1="$(tty -s && tput bold)$PS1$(tty -s && tput sgr0)"

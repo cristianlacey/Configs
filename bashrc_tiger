@@ -153,6 +153,9 @@ alias tatom="~/usr/bin/atom"
 # alias for remote-atom via rmate
 alias ratom="~/usr/bin/ratom"
 
+# alias for igniting before submitting slurm script
+alias ign="echo "IGNITE" > control && sbatch"
+
 # --------------------------------------
 # SHELL FUNCTIONS
 # --------------------------------------

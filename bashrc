@@ -134,7 +134,7 @@ alias copy='xclip -sel clip'
 alias tiger="ssh -X clacey@tiger.princeton.edu"
 alias rtiger="ssh -R 52698:localhost:52698 clacey@tiger.princeton.edu"
 alias tdata="ssh -L 11111:localhost:11111 tigressdata2" # from Princeton machine
-alias tdata2="ssh clacey@tigressdata.princeton.edu"
+alias tdata2="ssh -L 11111:localhost:11111 clacey@tigressdata.princeton.edu" # off campus
 alias mae-clacey="ssh -X mae-jmacart.princeton.edu"
 
 # vpn alias
@@ -142,6 +142,8 @@ alias vpn="startct -m console remote.princeton.edu"
 
 # preload paraview library dependency
 alias paraview="LD_PRELOAD=/usr/lib64/libstdc++.so.6 ~/ParaView/ParaView-5.6.0-MPI-Linux-64bit/bin/paraview"
+# paraview off campus
+alias paraview2="LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6 ~/ParaView/ParaView-5.6.0-MPI-Linux-64bit/bin/paraview"
 
 # atom alias for running numpy
 alias catom="conda activate; atom &"

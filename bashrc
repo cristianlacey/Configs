@@ -126,6 +126,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # open emacs in terminal by default
 alias emacs="emacs -nw"
+alias emasc="emacs -nw"
 
 # clipboard copy
 alias copy='xclip -sel clip'

@@ -8,7 +8,7 @@ fi
 # User specific environment and startup programs
 
 PATH=$PATH:$HOME/.local/bin:$HOME/bin
-PATH=$PATH:/home/clacey/NGA/bin
+PATH=$PATH:/home/clacey/ISAT/NGA/bin
 
 export PATH
 

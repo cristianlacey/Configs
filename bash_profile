@@ -31,7 +31,7 @@ export PATH=$PATH:/home/clacey/PDRs/bin
 
 module load intel
 module load intel-mpi
-module load anaconda
+module load anaconda3
 module load git
 
 # bold username

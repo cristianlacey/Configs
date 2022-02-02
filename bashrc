@@ -136,7 +136,7 @@ alias tiger="ssh -X clacey@tiger.princeton.edu"
 alias rtiger="ssh -R 52698:localhost:52698 clacey@tiger.princeton.edu"
 alias tdata="ssh -L 11111:localhost:11111 tigressdata2" # from Princeton machine
 alias tdata2="ssh -L 11111:localhost:11111 clacey@tigressdata.princeton.edu" # off campus
-alias mae-clacey="ssh -X mae-jmacart.princeton.edu"
+alias mae-clacey="ssh -X ctrfl-karlovitz.princeton.edu"
 
 # vpn alias
 alias vpn="startct -m console remote.princeton.edu"

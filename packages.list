@@ -2,7 +2,9 @@
 gnome-tweak-tool
 gnome-shell-extensions
 gnome-sushi
-dconf-tools
+#dconf-tools
+dconf-cli
+dconf-editor
 chrome-gnome-shell
 #texlive-full
 texmaker
